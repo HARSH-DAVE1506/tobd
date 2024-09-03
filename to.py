@@ -64,6 +64,7 @@ while cap.isOpened():
                       (min_x, min_y + baseLine), (min_x + labelSize[0], min_y - baseLine - labelSize[1]),
                       color, cv2.FILLED)
         cv2.putText(frame, label, (min_x, min_y), cv2.FONT_HERSHEY_COMPLEX, LABEL_SIZE, text_color, 1)
+        print(label)
     
     cv2.imshow('Object Detector', frame)
     if cv2.waitKey(1) == ord('q'):
